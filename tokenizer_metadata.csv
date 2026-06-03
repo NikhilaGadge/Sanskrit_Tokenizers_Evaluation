@@ -1,0 +1,33 @@
+label,class,vocab_size,model_path,backend_model,special_tokens
+claude,GPT2Tokenizer,65000,Xenova/claude-tokenizer,"BPE(dropout=None, unk_token=None, continuing_subword_prefix="""", end_of_word_suffix="""", fuse_unk=False, byte_fallback=False, ignore_merges=False, vocab={""<EOT>"":0, ""<META>"":1, ""<META_START>"":2, ""<META_END>"":3, ""<SOS>"":4, ...}, merges=[(""Ġ"", ""Ġ""), (""ĠĠ"", ""ĠĠ""), (""i"", ""n""), (""ĠĠ"", ""Ġ""), (""Ġ"", ""t""), ...])","{'bos_token': '<EOT>', 'eos_token': '<EOT>', 'unk_token': '<EOT>'}"
+tiny_mistral,TokenizersBackend,32000,openaccess-ai-collective/tiny-mistral,"BPE(dropout=None, unk_token=""<unk>"", continuing_subword_prefix=None, end_of_word_suffix=None, fuse_unk=True, byte_fallback=True, ignore_merges=False, vocab={""<unk>"":0, ""<s>"":1, ""</s>"":2, ""<0x00>"":3, ""<0x01>"":4, ...}, merges=[(""▁"", ""t""), (""i"", ""n""), (""e"", ""r""), (""▁"", ""a""), (""h"", ""e""), ...])","{'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>'}"
+sutra,TokenizersBackend,256001,TWO/sutra-mlt256-v2,"BPE(dropout=None, unk_token=""<unk>"", continuing_subword_prefix=None, end_of_word_suffix=None, fuse_unk=True, byte_fallback=False, ignore_merges=False, vocab={""<s>"":0, ""<pad>"":1, ""</s>"":2, ""<unk>"":3, ""
+"":4, ...}, merges=[(""▁"", ""t""), (""▁"", ""a""), (""h"", ""e""), (""i"", ""n""), (""r"", ""e""), ...])","{'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>', 'sep_token': '</s>', 'pad_token': '<pad>', 'cls_token': '<s>', 'mask_token': '<mask>'}"
+qwen_sanskrit_model,Qwen2Tokenizer,151643,diabolic6045/Sanskrit-Qwen2.5-7B-base,"BPE(dropout=None, unk_token=None, continuing_subword_prefix="""", end_of_word_suffix="""", fuse_unk=False, byte_fallback=False, ignore_merges=False, vocab={""!"":0, """""":1, ""#"":2, ""$"":3, ""%"":4, ...}, merges=[(""Ġ"", ""Ġ""), (""ĠĠ"", ""ĠĠ""), (""i"", ""n""), (""Ġ"", ""t""), (""ĠĠĠĠ"", ""ĠĠĠĠ""), ...])","{'eos_token': '<|endoftext|>', 'pad_token': '<|endoftext|>'}"
+qwen_sanskrit_tokenizer,TokenizersBackend,120000,diabolic6045/Sanskrit-English-qwen2-tokenizer,"BPE(dropout=None, unk_token=None, continuing_subword_prefix="""", end_of_word_suffix="""", fuse_unk=False, byte_fallback=False, ignore_merges=False, vocab={""<unk>"":0, ""<|im_start|>"":1, ""<|im_end|>"":2, ""<pad>"":3, ""	"":4, ...}, merges=[(""h"", ""e""), (""▁"", ""t""), (""▁"", ""a""), (""▁"", ""s""), (""▁"", ""॥""), ...])","{'eos_token': '<|im_end|>', 'unk_token': '<unk>', 'pad_token': '<pad>'}"
+mt5,T5Tokenizer,250100,google/mt5-small,"Unigram(unk_id=2, vocab=[(""<pad>"", 0), (""</s>"", 0), (""<unk>"", 0), (""<0x00>"", 0), (""<0x01>"", 0), ...], byte_fallback=False)","{'eos_token': '</s>', 'unk_token': '<unk>', 'pad_token': '<pad>'}"
+mbart,MBart50Tokenizer,250054,facebook/mbart-large-50,"Unigram(unk_id=3, vocab=[(""<s>"", 0), (""<pad>"", 0), (""</s>"", 0), (""<unk>"", 0), ("","", -3.4635426998138428), ...], byte_fallback=False)","{'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>', 'sep_token': '</s>', 'pad_token': '<pad>', 'cls_token': '<s>', 'mask_token': '<mask>'}"
+airavata,TokenizersBackend,48064,ai4bharat/Airavata,"BPE(dropout=None, unk_token=""<unk>"", continuing_subword_prefix=None, end_of_word_suffix=None, fuse_unk=True, byte_fallback=True, ignore_merges=False, vocab={""<unk>"":0, ""<s>"":1, ""</s>"":2, ""<0x00>"":3, ""<0x01>"":4, ...}, merges=[(""▁"", ""के""), (""▁क"", ""े""), (""▁"", ""में""), (""▁मे"", ""ं""), (""▁म"", ""ें""), ...])","{'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>', 'pad_token': '<pad>'}"
+llama,TokenizersBackend,128000,meta-llama/Llama-3.1-8B-Instruct,"BPE(dropout=None, unk_token=None, continuing_subword_prefix=None, end_of_word_suffix=None, fuse_unk=False, byte_fallback=False, ignore_merges=True, vocab={""!"":0, """""":1, ""#"":2, ""$"":3, ""%"":4, ...}, merges=[(""Ġ"", ""Ġ""), (""Ġ"", ""ĠĠĠ""), (""ĠĠ"", ""ĠĠ""), (""ĠĠĠ"", ""Ġ""), (""i"", ""n""), ...])","{'bos_token': '<|begin_of_text|>', 'eos_token': '<|eot_id|>'}"
+aya,CohereTokenizer,255000,CohereLabs/aya-expanse-8b,"BPE(dropout=None, unk_token=None, continuing_subword_prefix="""", end_of_word_suffix="""", fuse_unk=False, byte_fallback=False, ignore_merges=False, vocab={""<PAD>"":0, ""<UNK>"":1, ""<CLS>"":2, ""<SEP>"":3, ""<MASK_TOKEN>"":4, ...}, merges=[(""Ġ"", ""Ġ""), (""Ġ"", ""t""), (""e"", ""r""), (""i"", ""n""), (""Ġ"", ""a""), ...])","{'bos_token': '<BOS_TOKEN>', 'eos_token': '<|END_OF_TURN_TOKEN|>', 'sep_token': '<SEP>', 'pad_token': '<PAD>', 'cls_token': '<CLS>', 'mask_token': '<MASK_TOKEN>'}"
+gemma,GemmaTokenizer,256000,google/gemma-1.1-2b-it,"BPE(dropout=None, unk_token=""<unk>"", continuing_subword_prefix=None, end_of_word_suffix=None, fuse_unk=True, byte_fallback=True, ignore_merges=False, vocab={""<pad>"":0, ""<eos>"":1, ""<bos>"":2, ""<unk>"":3, ""<mask>"":4, ...}, merges=[(""
+"", ""
+""), (""
+"", ""
+
+""), (""
+
+"", ""
+""), (""
+"", ""
+
+
+""), (""
+
+"", ""
+
+""), ...])","{'bos_token': '<bos>', 'eos_token': '<eos>', 'unk_token': '<unk>', 'pad_token': '<pad>', 'mask_token': '<mask>'}"
+cl100k_base,Encoding,100277,cl100k_base,Encoding,"{'<|endoftext|>': 100257, '<|fim_prefix|>': 100258, '<|fim_middle|>': 100259, '<|fim_suffix|>': 100260, '<|endofprompt|>': 100276}"
+o200k_base,Encoding,200019,o200k_base,Encoding,"{'<|endoftext|>': 199999, '<|endofprompt|>': 200018}"
+sentencepiece_sa,SentencePieceProcessor,8000,SentencePiece Model,SentencePieceProcessor,"{'unk_id': 0, 'bos_id': 1, 'eos_id': 2, 'pad_id': -1}"
+sansgpt_tokenizer,BPETokenizer,12000,BPETokenizer,BPETokenizer,"('<bos>', '<eos>', '<sep2>', '<sep>', '<pad>')"
